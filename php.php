@@ -31,6 +31,19 @@
 
     echo "<br>-----------------------------------<br>";
 
+    // Syntax for define variables
+    $numero_1 = 8;
+	$numero_2 = 7;
+	
+	echo $numero_1 + $numero_2 . "\n";
+
+    // Syntax for define constants
+	define("NUMERO_PI", 3.14);
+	
+	echo NUMERO_PI;
+
+    echo "<br>-----------------------------------<br>";
+
     /* DEBUGGING */
     # 11. Debugging is when we inspect the content of our code or of a variable to verify what value it has at some point in our program.
     # 12. PHP offers us the following functions for debugging: print_r() and var_dump()
