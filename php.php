@@ -253,4 +253,21 @@
 	// Exception: The result is not the same when we use 'and' instead '&&' (the same for the others operators)
 	$resultado = $michis_4_patas and $michis_programan_con_PHP;
 	var_dump($resultado);
+
+    echo "<br>-----------------------------------<br>";
+
+    /* ARITHMETIC OPERATORS */
+    $resultado = 5 ** 3; // 5 x 5 x 5
+    echo $resultado;
+    echo "<br>";
+    echo (5 * 6) . " " . (80 / 4);
+    echo "<br>";
+    echo 5 / 2;
+    echo "<br>";
+    echo 5 % 2;
+    echo "<br>";
+
+    $horas = 7501;
+    echo "$horas segundo convertidos a horas son " . ($horas / 3600) . "<br>";
+    echo "Sobran " . ($horas % 3600) . " segundos.";
 ?>
