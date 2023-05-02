@@ -229,4 +229,28 @@
     var_dump($null); echo "<br>";
 
     # 19. Casting to another data type: (array) / (object) / (object)
+
+    echo "<br>-----------------------------------<br>";
+
+    /* LOGICAL OPERATORS */
+    $michis_felinos             = true;
+	$michis_4_patas             = true;
+	$michis_vuelan              = false;
+	$michis_programan_con_PHP   = false;
+	
+	// AND
+	var_dump($michis_felinos && $michis_4_patas);
+	echo "<br>";
+
+	// OR
+	var_dump($michis_4_patas || $michis_vuelan);
+	echo "<br>";
+	
+	// NOT
+	var_dump(!$michis_4_patas);
+	echo "<br>";
+	
+	// Exception: The result is not the same when we use 'and' instead '&&' (the same for the others operators)
+	$resultado = $michis_4_patas and $michis_programan_con_PHP;
+	var_dump($resultado);
 ?>
