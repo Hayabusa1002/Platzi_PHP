@@ -66,4 +66,66 @@
     var_dump($people);
 
     echo "<br>-----------------------------------<br>";
+
+    /* DATA TYPE */
+    // Integer (int)
+    $number_1 = 5;
+    var_dump($number_1);
+    echo "<br>";
+
+    // Floating (float)
+    $number_2 = 6.27;
+    var_dump($number_2);
+    echo "<br>";
+
+    // Double (float)
+    $number_3 = 3.2535135456432154;
+    var_dump($number_3);
+    echo "<br>";
+
+    // Char (string)
+    $char = '#';
+    var_dump($char);
+    echo "<br>";
+
+    // String (string)
+    $string  = 'abc#$% aabbcs asd';
+    var_dump($string );
+    echo "<br>";
+
+    // Boolean (bool)
+    $bool_1  = true;
+    $bool_2  = false;
+    var_dump($bool_1);
+    echo "<br>";
+    var_dump($bool_2);
+    echo "<br>";
+
+    // Null (null)
+    $empty  = null;
+    var_dump($empty);
+    echo "<br>";
+
+    // Undefined
+    $und;
+    var_dump($und);
+    echo "<br>";
+
+    echo "<br>-----------------------------------<br>";
+    # 14. PHP has weak typing, which means that it can convert one data type to another depending on the context
+    $num_1 = 0;
+	$num_2 = 5;
+	$num_3 = 21312312;
+	$num_4 = '10';
+	$num_5 = $num_4 + $num_2;
+	$text1 = '15 papas';
+	$text2 = $text1 + $num_2;
+
+	var_dump($num_1); echo "<br>";
+	var_dump($num_2); echo "<br>";
+	var_dump($num_3); echo "<br>";
+	var_dump($num_4); echo "<br>";
+	var_dump($num_5); echo "<br>";
+	var_dump($text1); echo "<br>";
+	var_dump($text2); echo "<br>";
 ?>
