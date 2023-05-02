@@ -128,4 +128,105 @@
 	var_dump($num_5); echo "<br>";
 	var_dump($text1); echo "<br>";
 	var_dump($text2); echo "<br>";
+
+    echo "<br>-----------------------------------<br>";
+
+    /* CASTING */
+    # Casting is when we force a data type to become another data type
+
+    # 15. Casting to integer: (int) / (integer)
+    // String to Integer
+    $number_string = "5";               // string
+	$number_int = (int) $number_string; // integer
+    var_dump($number_string); echo "<br>";
+    var_dump($number_int);    echo "<br>";
+
+    // Floating to Integer
+    $number = 5.89;          // floating
+	$number = (int) $number; // integer
+    var_dump($number); echo "<br>";
+
+    // Boolean to Integer
+    $true  = true;          // boolean true
+    $false = false;         // boolean false
+	$true  = (int) $true;   // integer
+    $false = (int) $false;  // integer
+    var_dump($true); echo "<br>";
+    var_dump($false); echo "<br>";
+
+    // NULL to Integer
+    $null = null;           // NULL
+	$null = (int) $null;    // integer
+    var_dump($null); echo "<br>";
+
+    # 16. Casting to floating: (float) / (double) / (real)
+    // Integer to Floating
+    $number = 7;                // integer
+	$number = (float) $number;  // integer
+    var_dump($number); echo "<br>";
+
+    // String to Floating
+    $number = '7.25';           // string
+	$number = (float) $number;  // integer
+    var_dump($number); echo "<br>";
+
+    // Boolean to Floating
+    $true  = true;            // boolean true
+    $false = false;           // boolean false
+	$true  = (float) $true;   // floating
+    $false = (float) $false;  // floating
+    var_dump($true); echo "<br>";
+    var_dump($false); echo "<br>";
+
+    // NULL to Floating
+    $null = null;           // NULL
+	$null = (float) $null;  // integer
+    var_dump($null); echo "<br>";
+
+    # 17. Casting to string: (string)
+    // Integer to String
+    $number = 7;                // integer
+	$number = (string) $number; // string
+    var_dump($number); echo "<br>";
+
+    // Floating to String
+    $number = '7.25';           // floating
+	$number = (string) $number; // string
+    var_dump($number); echo "<br>";
+
+    // Boolean to String
+    $true  = true;              // boolean true
+    $false = false;             // boolean false
+	$true  = (string) $true;    // string
+    $false = (string) $false;   // string
+    var_dump($true); echo "<br>";
+    var_dump($false); echo "<br>";
+
+    // NULL to Floating
+    $null = null;            // NULL
+	$null = (string) $null;  // string
+    var_dump($null); echo "<br>";
+
+    # 18. Casting to boolean: (bool) / (boolean)
+    // Integer to Boolean
+    $number = 0;              // integer
+	$number = (bool) $number; // boolean
+    var_dump($number); echo "<br>";
+
+    // Floating to Boolean
+    $number = 7.45;           // floating
+	$number = (bool) $number; // boolean
+    var_dump($number); echo "<br>";
+
+    // String to Boolean
+    $text = 'abc';            // string
+	$text = (bool) $text;     // boolean
+    var_dump($text); echo "<br>";
+
+    // NULL to Boolean
+    $null = null;             // NULL
+	$null = (bool) $null;   // string
+    var_dump($null); echo "<br>";
+
+    # 19. Casting to another data type: (array) / (object) / (object)
 ?>
