@@ -68,6 +68,7 @@
     echo "<br>-----------------------------------<br>";
 
     /* DATA TYPE */
+    echo 'DATA TYPE<br><br>';
     // Integer (int)
     $number_1 = 5;
     var_dump($number_1);
@@ -133,6 +134,7 @@
 
     /* CASTING */
     # Casting is when we force a data type to become another data type
+    echo 'CASTING<br><br>';
 
     # 15. Casting to integer: (int) / (integer)
     // String to Integer
@@ -233,6 +235,7 @@
     echo "<br>-----------------------------------<br>";
 
     /* LOGICAL OPERATORS */
+    echo 'LOGICAL OPERATORS<br><br>';
     $michis_felinos             = true;
 	$michis_4_patas             = true;
 	$michis_vuelan              = false;
@@ -257,6 +260,7 @@
     echo "<br>-----------------------------------<br>";
 
     /* ARITHMETIC OPERATORS */
+    echo 'ARITHMETIC OPERATORS<br><br>';
     $resultado = 5 ** 3; // 5 x 5 x 5
     echo $resultado;
     echo "<br>";
@@ -270,4 +274,59 @@
     $horas = 7501;
     echo "$horas segundo convertidos a horas son " . ($horas / 3600) . "<br>";
     echo "Sobran " . ($horas % 3600) . " segundos.";
+
+    echo "<br>-----------------------------------<br>";
+
+    /* RELATIONAL OPERATORS */
+    echo 'RELATIONAL OPERATORS<br><br>';
+    $a = 5;
+    $b = 5;
+    $b2 = "5";
+    $c = 9;
+    $d = 2;
+
+    // == Igual
+    var_dump( $a == $b );   echo "<br>";
+    var_dump( $a == $b2 );  echo "<br>";
+
+    // === Idéntico
+    var_dump( $a === $b );  echo "<br>";
+    var_dump( $a === $b2 ); echo "<br>";
+
+    // != Diferente
+    var_dump( $a != $b );   echo "<br>";
+    var_dump( $a != $b2 );  echo "<br>";
+
+    // !== Diferente
+    var_dump( $a !== $b );  echo "<br>";
+    var_dump( $a !== $b2 ); echo "<br>";
+
+    // < Menor que
+    var_dump( $a < $b );    echo "<br>";
+    var_dump( $c < $b );    echo "<br>";
+    var_dump( $d < $b );    echo "<br>";
+
+    // > Mayor que
+    var_dump( $a > $b );    echo "<br>";
+    var_dump( $c > $b );    echo "<br>";
+    var_dump( $d > $b );    echo "<br>";
+
+    // >= Mayor o igual que
+    var_dump( $a >= $b );   echo "<br>";
+    var_dump( $c >= $b );   echo "<br>";
+    var_dump( $d >= $b );   echo "<br>";
+
+    // <= Menor o igual que
+    Var_dump( $a <= $b );   echo "<br>";
+    var_dump( $c <= $b );   echo "<br>";
+    var_dump( $d <= $b );   echo "<br>";
+
+    // <=> Nave espacial
+    echo 2 <=> 1;           echo "<br>"; # 1
+    echo 1 <=> 1;           echo "<br>"; # 0
+    echo -50 <=> 1;         echo "<br>"; # -1
+
+    // ?? Fusión de null
+    $edad_de_pepito = 23;
+    echo $edad_de_juanito ?? $edad_de_pepito ?? $edad_de_jaimito;
 ?>
