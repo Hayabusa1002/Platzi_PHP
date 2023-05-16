@@ -270,4 +270,78 @@
     $horas = 7501;
     echo "$horas segundo convertidos a horas son " . ($horas / 3600) . "<br>";
     echo "Sobran " . ($horas % 3600) . " segundos.";
+
+    echo "<br>-----------------------------------<br>";
+
+    /* RELATIONAL OPERATORS: COMPARATION */
+	$a = 5;
+    $b = 5;
+    $b2 = "5";
+    $c = 9;
+    $d = 2;
+
+    // == Igual
+    var_dump( $a == $b );   echo "<br>";
+    var_dump( $a == $b2 );  echo "<br>";
+
+    // === Idéntico
+    var_dump( $a === $b );  echo "<br>";
+    var_dump( $a === $b2 ); echo "<br>";
+
+    // != Diferente
+    var_dump( $a != $b );   echo "<br>";
+    var_dump( $a != $b2 );  echo "<br>";
+
+    // !== Diferente
+    var_dump( $a !== $b );  echo "<br>";
+    var_dump( $a !== $b2 ); echo "<br>";
+
+    // < Menor que
+    var_dump( $a < $b );    echo "<br>";
+    var_dump( $c < $b );    echo "<br>";
+    var_dump( $d < $b );    echo "<br>";
+
+    // > Mayor que
+    var_dump( $a > $b );    echo "<br>";
+    var_dump( $c > $b );    echo "<br>";
+    var_dump( $d > $b );    echo "<br>";
+
+    // >= Mayor o igual que
+    var_dump( $a >= $b );   echo "<br>";
+    var_dump( $c >= $b );   echo "<br>";
+    var_dump( $d >= $b );   echo "<br>";
+
+    // <= Menor o igual que
+    Var_dump( $a <= $b );   echo "<br>";
+    var_dump( $c <= $b );   echo "<br>";
+    var_dump( $d <= $b );   echo "<br>";
+
+    // <=> Nave espacial
+    echo 2 <=> 1;           echo "<br>"; # 1
+    echo 1 <=> 1;           echo "<br>"; # 0
+    echo -50 <=> 1;         echo "<br>"; # -1
+
+    // ?? Fusión de null
+    $edad_de_pepito = 23;
+    echo $edad_de_juanito ?? $edad_de_pepito ?? $edad_de_jaimito;
+
+    echo "<br>-----------------------------------<br>";
+
+    /* RELATIONAL OPERATORS: INCREASE AND DECREASE */
+    $a = 5;
+    $b = 5;
+    $c = 9;
+    $d = 9;
+
+    // Pre-incremento
+    var_dump(++$a); echo "<br>";
+
+    // Post-incremento
+    var_dump($b++); echo "<br>";
+
+    // Pre-decremento
+    var_dump(--$c); echo "<br>";
+
+    // Post-incremento
+    var_dump($d--); echo "<br>";
 ?>
