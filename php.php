@@ -68,6 +68,7 @@
     echo "<br>-----------------------------------<br>";
 
     /* DATA TYPE */
+    echo 'DATA TYPE<br><br>';
     // Integer (int)
     $number_1 = 5;
     var_dump($number_1);
@@ -133,6 +134,7 @@
 
     /* CASTING */
     # Casting is when we force a data type to become another data type
+    echo 'CASTING<br><br>';
 
     # 15. Casting to integer: (int) / (integer)
     // String to Integer
@@ -233,6 +235,7 @@
     echo "<br>-----------------------------------<br>";
 
     /* LOGICAL OPERATORS */
+    echo 'LOGICAL OPERATORS<br><br>';
     $michis_felinos             = true;
 	$michis_4_patas             = true;
 	$michis_vuelan              = false;
@@ -257,6 +260,7 @@
     echo "<br>-----------------------------------<br>";
 
     /* ARITHMETIC OPERATORS */
+    echo 'ARITHMETIC OPERATORS<br><br>';
     $resultado = 5 ** 3; // 5 x 5 x 5
     echo $resultado;
     echo "<br>";
@@ -273,8 +277,9 @@
 
     echo "<br>-----------------------------------<br>";
 
-    /* RELATIONAL OPERATORS: COMPARATION */
-	$a = 5;
+    /* RELATIONAL OPERATORS */
+    echo 'RELATIONAL OPERATORS<br><br>';
+    $a = 5;
     $b = 5;
     $b2 = "5";
     $c = 9;
@@ -328,6 +333,7 @@
     echo "<br>-----------------------------------<br>";
 
     /* RELATIONAL OPERATORS: INCREASE AND DECREASE */
+    echo 'RELATIONAL OPERATORS<br><br>';
     $a = 5;
     $b = 5;
     $c = 9;
@@ -348,6 +354,8 @@
     echo "<br>-----------------------------------<br>";
 
     /* OTHER OPERATORS */
+    echo 'OTHER OPERATORS<br><br>';
+
     // Asignación
 	$a = 5;
     $b = 5;
