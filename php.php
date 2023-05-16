@@ -377,4 +377,18 @@
 
     // Concatenación
     var_dump($e . " " . "Santana"); echo "<br>";
+
+    echo "<br>-----------------------------------<br>";
+
+    /* OPERATOR PRECEDENCE */
+    echo 'OPERATOR PRECEDENCE<br><br>';
+
+    $michis_4_patas = true;
+	$michis_programan_con_PHP = false;
+	
+	$resultado_1 =  $michis_4_patas and $michis_programan_con_PHP;
+	$resultado_2 = ($michis_4_patas and $michis_programan_con_PHP);
+	
+	var_dump( $resultado_1 ); echo "<br>"; // true
+	var_dump( $resultado_2 ); echo "<br>"; // false
 ?>
