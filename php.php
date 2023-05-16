@@ -344,4 +344,29 @@
 
     // Post-incremento
     var_dump($d--); echo "<br>";
+
+    echo "<br>-----------------------------------<br>";
+
+    /* OTHER OPERATORS */
+    // Asignación
+	$a = 5;
+    $b = 5;
+    $c = 5;
+    $d = 10;
+    $e = "Carlos";
+    
+    // Adición
+    var_dump($a += 10); echo "<br>";
+
+    // Sustracción
+    var_dump($b -= 10); echo "<br>";
+
+    // Multitplicación
+    var_dump($c *= 10); echo "<br>";
+
+    // División
+    var_dump($d /= 2);  echo "<br>";
+
+    // Concatenación
+    var_dump($e . " " . "Santana"); echo "<br>";
 ?>
